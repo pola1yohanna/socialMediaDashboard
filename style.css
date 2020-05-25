@@ -1,0 +1,153 @@
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #ff0000;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+body
+{
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+.grid-container
+{
+  display: grid;
+  justify-content : space-around;
+  align-content: space-around;
+}
+.head
+{
+  grid-template-columns: auto auto;
+
+}
+.dashboard,.dailyOverview
+{
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto;
+  grid-row-gap: 5vh;
+
+}
+.FollowersNumber
+{
+  margin-block-start:0;
+  margin-block-end:0;
+}
+.increase::before
+{
+  content: url("images/icon-up.svg");
+    padding-right: 0.6vw;
+}
+.descrease::before
+{
+  content: url("images/icon-down.svg");
+    padding-right: 0.6vw;
+}
+#ytag::before
+{
+  content:url("images/icon-youtube.svg");
+  padding-right: 0.6vw;
+  position: relative;
+  top:0.4vh;
+}
+#itag::before
+{
+  content:url("images/icon-instagram.svg");
+  padding-right: 0.6vw;
+  position: relative;
+  top:0.4vh;
+}
+#ttag::before
+{
+  content:url("images/icon-twitter.svg");
+  padding-right: 0.6vw;
+  position: relative;
+  top:0.4vh;
+}
+#ftag::before
+{
+  content:url("images/icon-facebook.svg");
+  padding-right: 0.6vw;
+  position: relative;
+  top:0.4vh;
+}
+.grid-item
+{
+  background-color: hsl(225, 100%, 98%);
+  text-align: center;
+}
+.face , .twit , .insta , .yout
+{
+  width: 17vw;
+  height: 15vh;  
+}
+
+.facebook , .twitter , .instagram , .youtube
+{
+  width: 17vw;
+  height: 25vh;
+
+
+}
+.header
+{
+  position: relative;
+  right:5vw;
+}
+.dark-theme , .header
+{
+  margin: auto;
+}
