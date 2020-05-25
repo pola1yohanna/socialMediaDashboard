@@ -4,8 +4,17 @@
       <meta name="viewport" content="width=device-width , initial-scale=1.0">
       <link rel="stylesheet" href="style.css" type="text/css">
       <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+      <link rel="stylesheet" href="https://fonts.google.com/specimen/Inter">
       <script type="text/javascript" src="script.js">
       </script>
+      <style>
+        body
+        {
+          font-family: "Inter";
+          font-weight: 400;
+          font-size: 14px;
+        }
+      </style>
   </head>
   <body>
     <div class="head grid-container">
@@ -15,31 +24,31 @@
       </div>
       <div class="dark-theme">
         <label class="switch">
-          <input type="checkbox">
+          <input type="checkbox" id="chbox" onchange="toggleTheme()">
           <span class="slider round"></span>
         </label>
       </div>
     </div>
     <div class="dashboard grid-container">
-      <div style="border-top: 3px solid hsl(208, 92%, 53%);" class="grid-item facebook">
+      <div style="border-top: 3px solid hsl(208, 92%, 53%);" class="grid-item facebook pattern">
         <p id="ftag">@pola</p>
         <h1 class="FollowersNumber">1044</h1>
         <p style="margin-block-start:0;    font-size: xx-small;">FOLLOWERS</p>
         <p class="increase" style="    font-size: xx-small;">100 today</p>
       </div>
-      <div style="    border-top: 3px solid hsl(203, 89%, 53%);" class="grid-item twitter">
+      <div style="    border-top: 3px solid hsl(203, 89%, 53%);" class="grid-item twitter pattern">
         <p id="ttag">@pola</p>
         <h1 class="FollowersNumber">9000</h1>
         <p style="margin-block-start:0 ;font-size: xx-small;">FOLLOWERS</p>
         <p class="increase" style="font-size: xx-small;">100 today</p>
       </div>
-      <div style="border-style: solid; border-width: 3px;border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%) ) 100% 0  0/3px 0 3px 0 stretch;" class="grid-item instagram">
+      <div style="border-style: solid; border-width: 3px;border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%) ) 100% 0  0/3px 0 3px 0 stretch;" class="grid-item instagram pattern">
         <p id="itag">@pola</p>
         <h1 class="FollowersNumber">11K</h1>
         <p style="margin-block-start:0;    font-size: xx-small;">FOLLOWERS</p>
         <p class="increase" style="    font-size: xx-small;">100 today</p>
       </div>
-      <div style="border-top: 3px solid hsl(348, 97%, 39%)" class="grid-item youtube">
+      <div style="border-top: 3px solid hsl(348, 97%, 39%)" class="grid-item youtube pattern">
         <p id="ytag">@pola</p>
         <h1 class="FollowersNumber">1.2M</h1>
         <p style="margin-block-start:0;    font-size: xx-small;">FOLLOWERS</p>
@@ -50,49 +59,49 @@
       <h2>Overview - Today</h2>
     </div>
     <div class="grid-container dailyOverview">
-      <div class="grid-item face grid-container " id="facebook1">
-        <p class="grid-item">Page Views</p>
+      <div class="grid-item face grid-container card " id="facebook1">
+        <p>Page Views</p>
         <img style="margin:auto;" src="images/icon-facebook.svg" alt="">
         <h2 style="margin:auto">57</h2>
         <p class="increase">3%</p>
       </div>
-      <div class="grid-item face grid-container" id="facebook2">
+      <div class="grid-item face grid-container card" id="facebook2">
         <p >Likes</p>
         <img style="margin:auto;" src="images/icon-facebook.svg" alt="">
         <h2 style="margin:auto">18</h2>
         <p class="descrease">3%</p>
       </div>
-      <div class="grid-item twit grid-container" id="twitter1">
+      <div class="grid-item twit grid-container card" id="twitter1">
         <p >Retweets</p>
         <img style="margin:auto;" src="images/icon-twitter.svg" alt="">
         <h2 style="margin:auto">3200</h2>
         <p class="increase">503%</p>
       </div>
-      <div class="grid-item twit grid-container " id="twitter2">
+      <div class="grid-item twit grid-container card" id="twitter2">
         <p >Likes</p>
         <img style="margin:auto;" src="images/icon-twitter.svg" alt="">
         <h2 style="margin:auto">5000</h2>
         <p class="increase">300%</p>
       </div>
-      <div class="grid-item insta grid-container" id="instagram1">
+      <div class="grid-item insta grid-container card" id="instagram1">
         <p >Likes</p>
         <img style="margin:auto;" src="images/icon-instagram.svg" alt="">
         <h2 style="margin:auto">5400</h2>
         <p class="increase">3040%</p>
       </div>
-      <div class="grid-item insta grid-container" id="instagram2">
+      <div class="grid-item insta grid-container card" id="instagram2">
         <p >Profile Views</p>
         <img style="margin:auto;" src="images/icon-instagram.svg" alt="">
         <h2 style="margin:auto">52K</h2>
         <p class="increase">3900%</p>
       </div>
-      <div class="grid-item yout grid-container" id="youtube1">
+      <div class="grid-item yout grid-container card" id="youtube1">
         <p >Likes</p>
         <img style="margin:auto;" src="images/icon-youtube.svg" alt="">
         <h2 style="margin:auto">107</h2>
         <p class="descrease">19%</p>
       </div>
-      <div class="grid-item yout grid-container" id="youtube2">
+      <div class="grid-item yout grid-container card" id="youtube2">
         <p >Total Views</p>
         <img style="margin:auto;" src="images/icon-youtube.svg" alt="">
         <h2 style="margin:auto">1407</h2>

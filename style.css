@@ -69,7 +69,7 @@ body
   justify-content : space-around;
   align-content: space-around;
 }
-.head
+.head,.insta,.face,.yout,.twit
 {
   grid-template-columns: auto auto;
 
@@ -85,6 +85,17 @@ body
 {
   margin-block-start:0;
   margin-block-end:0;
+}
+.grid-item:hover
+{
+}
+.increase
+{
+  color:hsl(163, 72%, 41%);
+}
+.descrease
+{
+  color:hsl(356, 69%, 56%)
 }
 .increase::before
 {
@@ -129,18 +140,17 @@ body
   background-color: hsl(225, 100%, 98%);
   text-align: center;
 }
+
 .face , .twit , .insta , .yout
 {
   width: 17vw;
-  height: 15vh;  
+  height: 15vh;
 }
 
 .facebook , .twitter , .instagram , .youtube
 {
   width: 17vw;
   height: 25vh;
-
-
 }
 .header
 {
